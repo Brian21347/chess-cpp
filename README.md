@@ -24,3 +24,13 @@ A chess program written in C++
 - `double miniMax(vector<int> position, bool whiteMove, double alpha, double beta)`: the minimax evaluation
 - `unordered_map<int, Position> positionCache`: stores the previously calculated positions
 
+Pieces are integers: 
+- Color: first bit; 0 == white and 1 == black
+- Piece type: three bits
+  - 0b000: empty square
+  - 0b001: pawn
+  - 0b010: knight
+  - 0b011: bishop
+  - 0b100: rook
+  - 0b101: queen
+  - 0b110: king
